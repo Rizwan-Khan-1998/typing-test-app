@@ -45,10 +45,13 @@ function initTyping() {
     let typedChar = inpField.value.split("")[charIndex];
     //
     if(charIndex < characters.length - 1 && timeLeft > 0) {
+        //start the timer
         if(!isTyping) {
             timer = setInterval(initTimer, 1000);
             isTyping = true;
         }
+
+        // backspace feature
         if(typedChar == null) {
             if(charIndex > 0) {
                 charIndex--;

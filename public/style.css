@@ -194,7 +194,6 @@ li:not(:first-child) span{
 @media (max-width: 518px) {
   .wrapper .content-box{
     padding: 10px 15px 0;
-    max-height: 100vh;
   }
   .typing-text p{
     font-size: 18px;
